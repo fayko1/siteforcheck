@@ -1,0 +1,374 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+html, body {
+    height: 100%;
+	font-family: 'Inter', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.audi-main {
+    height: 100%;
+    background-image: url('img/audi-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.footer {
+    padding-top: 20px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav ul li {
+    margin-right: 35px;
+    display: inline-block;
+}
+
+.nav ul li:last-child {
+    margin-right: 0px;
+}
+
+.nav ul li a {
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
+.audi-main__content {
+    padding-top: 500px;
+    color: white;
+}
+
+.audi-main__content h3 {
+    font-size: 32px;
+}
+
+.audi-main__content p {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.audi-main__btns {
+    margin-top: 15px;
+}
+
+.audi-main__btns button:first-child {
+    margin-right: 20px;
+}
+
+.audi-main__btns button {
+    transition: .3s;
+}
+
+.btn-white {
+    padding: 30px 40px 30px 40px;
+    background-color: white;
+    border-radius: 25px;
+    border: 0px solid transparent;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.btn-white:hover {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-transparent {
+    padding: 30px 40px 30px 40px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 1px solid white;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.battery {
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.battery-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.battery-line {
+    height: 120px;
+    border-left: 2px dotted lightgray;
+    display: inline-block;
+}
+
+.battery-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.battery-item h4 {
+    font-size: 20px;
+}
+
+.battery-item h3 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+.slider-main {
+    height: 700px;
+    width: 100%;
+    margin-top: 140px;
+    margin-bottom: 180px;
+}
+
+.wrapper,
+.slide {
+    width: 100%;
+    height: 700px;
+    position: relative;
+}
+.slide {
+    overflow: hidden;
+}
+/* .slide::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 10;
+} */
+.slide .image-slider {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.slide .image-data {
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    max-width: 420px;
+}
+
+.slide .image-data.second {
+    position: absolute;
+    top: 70%;
+    left: 65%;
+    max-width: 420px;
+}
+
+.image-data .text b {
+    font-size: 22px;
+    color: white;
+}
+
+.image-data .text {
+    font-size: 18px;
+    color: white;
+}
+
+.nav-btn {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.nav-btn::before,
+.nav-btn::after {
+    color: #fff;
+}
+
+.showcase {
+    margin-bottom: 100px;
+}
+
+.cars {
+    height: 500px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cars h1 {
+    position: absolute;
+    top: -15px;
+    font-size: 72px;
+}
+
+.cars img {
+    position: absolute;
+}
+
+.car-1 {
+    width: 788px;
+    height: 437px;
+    left: -20px;
+}
+
+.car-2 {
+    z-index: 5;
+}
+
+.car-3 {
+    right: -40px;
+}
+
+.showcase-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.btn-black {
+    padding: 30px 40px 30px 40px;
+    background-color: black;
+    border-radius: 25px;
+    border: 0px solid transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.showcase .btn-transparent {
+    padding: 30px 40px 30px 40px;
+    background-color: transparent;
+    border-radius: 25px;
+    border: 2px solid black;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    cursor:pointer;
+    z-index: 5;
+}
+
+footer {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+.footer-line {
+	width: 100%;
+	height: 2px;
+	background-color: #1E2833;
+	opacity: 6%;
+}
+
+.footer-container {
+	max-width: 80%;
+	margin: 0 auto;
+}
+
+.footer-field {
+	display: flex;
+	align-items: center;
+	/*padding-top: 35px;
+	padding-bottom: 35px;*/
+}
+
+.footer-field img {
+	width: 167px;
+	height: 94px;
+	margin-right: 110px;
+}
+
+.center-line {
+	height: 190px;
+	width: 2px;
+	background-color: #1E2833;
+	opacity: 6%;
+	margin-left: 100px;
+	margin-right: 80px;
+}
+
+.explore p {
+	margin-bottom: 14px;
+	font-size: 17px;
+}
+
+.explore p b {
+	font-size: 19px;
+}
+
+.explore p:last-child {
+	margin-bottom: 0px;
+}
+
+.explore {
+	margin-right: 150px;
+}
+
+.support {
+	margin-right: 100px;
+}
+
+.support p {
+	margin-bottom: 14px;
+	font-size: 17px;
+}
+
+.support p b {
+	font-size: 19px;
+}
+
+.support p:last-child {
+	margin-bottom: 0px;
+}
+
+.follow-us img {
+	width: 24px;
+	height: 24px;
+	margin-right: 0px;
+	cursor: pointer;
+}
+
+.follow-images {
+	margin-top: 15px;
+	display: flex;
+	gap: 22px;
+}
+
+#copyright {
+	margin-top: 65px;
+	margin-bottom: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

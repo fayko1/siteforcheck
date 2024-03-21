@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style_main.css">
+    <title>Audi</title>
+    <link rel="stylesheet" href="style/swiper-bundle.min.css">
+</head>
+<body>
+    <div class="audi-main">
+        <div class="container">
+            <div class="footer">
+                <div class="nav">
+                    <img src="img/AudiLogo.png" alt="">
+                    <ul>
+                        <li><a href="#">Версии</a></li>
+                        <li><a href="#">Модель</a></li>
+                        <li><a href="#">Подробнее</a></li>
+                        <li><a href="#">Аккаунт</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="audi-main__content">
+                <h3>2023 Audi RS e-tron® GT</h3>
+                <p>Цена от 14,000,000₽</p>
+                <div class="audi-main__btns">
+                    <button class="btn-white">Цена & Подробнее</button>
+                    <button class="btn-transparent">Получать новости от Audi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="battery">
+        <div class="container">
+            <div class="battery-content">
+                <div class="battery-item">
+                    <h4>Мощь</h4>
+                    <h3>637 л.с</h3>
+                    <p>С включенным усилением</p>
+                </div>
+                <div class="battery-line"></div>
+                <div class="battery-item">
+                    <h4>Размер батареи</h4>
+                    <h3>93 кВт ч</h3>
+                    <p>Валовой</p>
+                </div>
+                <div class="battery-line"></div>
+                <div class="battery-item">
+                    <h4>0-100 км</h4>
+                    <h3>3.1 сек</h3>
+                    <p>С включенным усилением</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="slider-main swiper mySwiper">
+        <div class="wrapper swiper-wrapper">
+            <div class="slide swiper-slide">
+                <img src="img/car_slide2.png" alt="" class="image-slider">
+                <div class="image-data">
+                    <span class="text"><b>Контроль запуска.</b> Легендарная производительность Audi лежит в основе Audi RS e-tron GT и оснащена захватывающим контролем запуска, увеличивающим мощность до 637 л.с.
+                    </span>
+                </div>
+            </div>
+            <div class="slide swiper-slide">
+                <img src="img/car_slide.png" alt="" class="image-slider">
+                <div class="image-data second">
+                    <span class="text"><b>Возьмите под контроль.</b> Audi RS e-tron GT способен заряжаться мощностью до 270 кВт с использованием технологии 800V, может заряжаться с 5% до 80% примерно за 23 минуты. Бортовой планировщик маршрута определяет зарядные станции на вашем маршруте, умело предупреждая собственные потребности в зарядке в дальних поездках.
+                    </span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+    <div class="showcase">
+        <div class="container">
+            <div class="cars">
+                <h1>Магазин 2024 Audi RS e-tron GT</h1>
+                <img class="car-1" src="img/audi-left.png" alt="">
+                <img class="car-2" src="img/audi-left.png" alt="">
+                <img class="car-3" src="img/audi-right.png" alt="">
+            </div>
+            <div class="showcase-btns">
+                <button class="btn-black">Цена & Подробнее</button>
+                <button class="btn-transparent">Контактный дилер</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-line"></div>
+            <div class="footer-container">
+                <div class="footer-field">
+                    <img src="img/AudiLogo.png" alt="">
+                    <p style="max-width: 380px; font-size:12px;">Audi of Russia прилагает усилия для обеспечения точности информации на страницах с общей информацией об автомобиле. Модели показаны только в иллюстративных целях и могут включать в себя функции, недоступные в модели для России. Поскольку могут возникнуть ошибки или доступность может измениться, обратитесь к дилеру для получения полной информации и текущих характеристик модели.</p>
+                    <div class="center-line"></div>
+                    <div class="explore">
+                        <p><b>Подробнее</b></p>
+                        <p>Модели</p>
+                        <p>Ауди Спорт</p>
+                    </div>
+                    <div class="support">
+                        <p><b>Поддержка</b></p>
+                        <p>Контакты</p>
+                        <p>Помощь</p>
+                    </div>
+                    <div class="follow-us">
+                        <h4>Подписывайтесь</h4>
+                        <div class="follow-images">
+                            <img src="img/facebook.png" alt="">
+                            <img src="img/twitter.png" alt="">
+                            <img src="img/instagram.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <div class="footer-line"></div>
+    </footer>
+    <section id="copyright">
+        <p style="color:#8f9499; font-size: 15px;">© 2023 Audi of Russia. All rights reserved.</p>
+    </section>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+              el: ".swiper-pagination",
+              clickable: true,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+          });
+    </script>
+</body>
+</html>
